@@ -3,13 +3,19 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 // Temp
 const PageOne = () => {
-    return <div>Page One</div>;
+    return (
+        <div>
+            Page One
+            <a href="/pagetwo">Navigate to Page Two</a>
+        </div>
+    );
 };
 const PageTwo = () => {
     return (
         <div>
             Page Two
             <button>Click me!</button>
+            <a href="/">Navigate to Page One</a>
         </div>
     );
 };
