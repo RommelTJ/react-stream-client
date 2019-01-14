@@ -23,12 +23,19 @@ const PageTwo = () => {
 const App = () => {
     return (
         <div>
-            <HashRouter>
+            <MemoryRouter>
                 <div>
                     <Route path="/" exact component={PageOne} />
                     <Route path="/pagetwo" component={PageTwo} />
                 </div>
-            </HashRouter>
+            </MemoryRouter>
+
+            {/*<HashRouter>*/}
+                {/*<div>*/}
+                    {/*<Route path="/" exact component={PageOne} />*/}
+                    {/*<Route path="/pagetwo" component={PageTwo} />*/}
+                {/*</div>*/}
+            {/*</HashRouter>*/}
 
             {/*<BrowserRouter>*/}
                 {/*<div>*/}
