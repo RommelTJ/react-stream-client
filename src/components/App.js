@@ -12,7 +12,10 @@ const PageTwo = () => {
 const App = () => {
     return (
         <div>
-            
+            <BrowserRouter>
+                <Route path="/" exact component={PageOne} />
+                <Route path="/pagetwo" component={PageTwo} />
+            </BrowserRouter>
         </div>
     );
 };
