@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, HashRouter, MemoryRouter, Route, Link } from "react-router-dom";
 
 // Temp
 const PageOne = () => {
