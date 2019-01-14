@@ -6,7 +6,7 @@ const PageOne = () => {
     return (
         <div>
             Page One
-            <a href="/pagetwo">Navigate to Page Two</a>
+            <Link to="/pagetwo">Navigate to Page Two</Link>
         </div>
     );
 };
@@ -15,7 +15,7 @@ const PageTwo = () => {
         <div>
             Page Two
             <button>Click me!</button>
-            <a href="/">Navigate to Page One</a>
+            <Link to="/">Navigate to Page One</Link>
         </div>
     );
 };
