@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, HashRouter, MemoryRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 // Temp
 const PageOne = () => {
@@ -23,20 +23,6 @@ const PageTwo = () => {
 const App = () => {
     return (
         <div>
-            {/*<MemoryRouter>*/}
-                {/*<div>*/}
-                    {/*<Route path="/" exact component={PageOne} />*/}
-                    {/*<Route path="/pagetwo" component={PageTwo} />*/}
-                {/*</div>*/}
-            {/*</MemoryRouter>*/}
-
-            {/*<HashRouter>*/}
-                {/*<div>*/}
-                    {/*<Route path="/" exact component={PageOne} />*/}
-                    {/*<Route path="/pagetwo" component={PageTwo} />*/}
-                {/*</div>*/}
-            {/*</HashRouter>*/}
-
             <BrowserRouter>
                 <div>
                     <Route path="/" exact component={PageOne} />
