@@ -23,12 +23,12 @@ const PageTwo = () => {
 const App = () => {
     return (
         <div>
-            <MemoryRouter>
-                <div>
-                    <Route path="/" exact component={PageOne} />
-                    <Route path="/pagetwo" component={PageTwo} />
-                </div>
-            </MemoryRouter>
+            {/*<MemoryRouter>*/}
+                {/*<div>*/}
+                    {/*<Route path="/" exact component={PageOne} />*/}
+                    {/*<Route path="/pagetwo" component={PageTwo} />*/}
+                {/*</div>*/}
+            {/*</MemoryRouter>*/}
 
             {/*<HashRouter>*/}
                 {/*<div>*/}
@@ -37,12 +37,12 @@ const App = () => {
                 {/*</div>*/}
             {/*</HashRouter>*/}
 
-            {/*<BrowserRouter>*/}
-                {/*<div>*/}
-                    {/*<Route path="/" exact component={PageOne} />*/}
-                    {/*<Route path="/pagetwo" component={PageTwo} />*/}
-                {/*</div>*/}
-            {/*</BrowserRouter>*/}
+            <BrowserRouter>
+                <div>
+                    <Route path="/" exact component={PageOne} />
+                    <Route path="/pagetwo" component={PageTwo} />
+                </div>
+            </BrowserRouter>
         </div>
     );
 };
