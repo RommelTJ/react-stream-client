@@ -11,7 +11,7 @@ const App = () => {
         <div>
             <BrowserRouter>
                 <div>
-
+                    <Route path="/" exact component={StreamList} />
                 </div>
             </BrowserRouter>
         </div>
