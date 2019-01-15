@@ -12,6 +12,7 @@ const App = () => {
             <BrowserRouter>
                 <div>
                     <Route path="/" exact component={StreamList} />
+                    <Route path="/streams/new" exact component={StreamCreate} />
                 </div>
             </BrowserRouter>
         </div>
