@@ -2,6 +2,8 @@ import React from 'react';
 
 class GoogleAuth extends React.Component {
 
+    state = { isSignedIn: null };
+
     componentDidMount() {
         window.gapi.load('client:auth2', () => {
             console.log('ready');
