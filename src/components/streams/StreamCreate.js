@@ -14,6 +14,18 @@ class StreamCreate extends React.Component {
         );
     }
 
+    renderError({ error, touched }) {
+        if (touched && error) {
+            return (
+                <div className="ui error message">
+                    <div className="header">
+                        { error }
+                    </div>
+                </div>
+            );
+        }
+    }
+
     onSubmit(formProps) {
         console.log(formProps);
     }
