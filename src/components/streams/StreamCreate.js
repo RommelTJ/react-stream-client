@@ -8,7 +8,7 @@ class StreamCreate extends React.Component {
         return (
             <div className="field">
                 <label>{label}</label>
-                <input {...input} />
+                <input {...input} autoComplete="off" />
                 <div>{meta.error}</div>
             </div>
         );
