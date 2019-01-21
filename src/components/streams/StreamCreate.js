@@ -9,12 +9,12 @@ class StreamCreate extends React.Component {
             <div className={className}>
                 <label>{label}</label>
                 <input {...input} autoComplete="off" />
-                {this.renderError(meta)}
+                {StreamCreate.renderError(meta)}
             </div>
         );
     };
 
-    renderError({ error, touched }) {
+    static renderError({ error, touched }) {
         if (touched && error) {
             return (
                 <div className="ui error message">
@@ -26,13 +26,13 @@ class StreamCreate extends React.Component {
         }
     }
 
-    onSubmit(formProps) {
+    static onSubmit(formProps) {
         console.log(formProps);
     }
 
     render() {
         return (
-            <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error">
+            <form onSubmit={this.props.handleSubmit(StreamCreate.onSubmit)} className="ui form error">
                 <Field name="title" component={this.renderInput} label="Enter Title:" />
                 <Field name="description" component={this.renderInput} label="Enter Description:"/>
                 <button className="ui button primary">Submit</button>
