@@ -3,7 +3,7 @@ import { Field, reduxForm } from "redux-form";
 
 class StreamCreate extends React.Component {
 
-    renderInput({ input, label, meta }) {
+    renderInput = ({ input, label, meta }) => {
 
         return (
             <div className="field">
@@ -12,7 +12,7 @@ class StreamCreate extends React.Component {
                 {this.renderError(meta)}
             </div>
         );
-    }
+    };
 
     renderError({ error, touched }) {
         if (touched && error) {
