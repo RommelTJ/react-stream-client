@@ -63,4 +63,4 @@ const formWrapped = reduxForm({
     validate
 })(StreamCreate);
 
-export default connect()(formWrapped);
+export default connect(null, { createStream })(formWrapped);
