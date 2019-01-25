@@ -27,7 +27,8 @@ class StreamEdit extends React.Component {
                     initialValues={_.pick(this.props.stream, 'title', 'description')}
                     onSubmit={this.onSubmit}
                 />
-            </div>);
+            </div>
+        );
     }
 
 }
