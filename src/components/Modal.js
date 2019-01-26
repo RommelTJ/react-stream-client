@@ -9,8 +9,7 @@ const Modal = (props) => {
                 <div className="header">{props.title}</div>
                 <div className="content">{props.content}</div>
                 <div className="actions">
-                    <button className="ui primary button">Delete</button>
-                    <button className="ui button">Cancel</button>
+                    {props.actions}
                 </div>
             </div>
         </div>,
