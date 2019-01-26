@@ -2,7 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const Modal = (props) => {
-    return <div>I am a modal</div>;
+    return ReactDOM.createPortal(
+        <div className="ui dimmer modals visible active">
+            <div className="ui standard modal visible active">
+                Test Modal
+            </div>
+        </div>,
+        document.querySelector("#modal")
+    )
 };
 
 export default Modal;
