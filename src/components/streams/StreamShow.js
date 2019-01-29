@@ -1,8 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchStream } from "../../actions";
-import StreamForm from "./StreamEdit";
-import _ from "lodash";
 
 class StreamShow extends React.Component {
 
