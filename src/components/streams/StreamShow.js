@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchStream } from "../../actions";
+import StreamForm from "./StreamEdit";
+import _ from "lodash";
 
 class StreamShow extends React.Component {
 
@@ -10,7 +12,16 @@ class StreamShow extends React.Component {
     }
 
     render() {
-        return <div>StreamShow</div>;
+        if (!this.props.stream) {
+            return <div>Loading...</div>;
+        }
+
+        return (
+            <div>
+                <h1>{this.props.stream.title}</h1>
+                <h5>{this.props.stream.description}</h5>
+            </div>
+        );
     }
 
 }
